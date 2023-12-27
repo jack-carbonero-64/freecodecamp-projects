@@ -4,7 +4,8 @@
 
 :root {
     /* Colors */
-    --color-background-page: white;
+    --color-background-page-1: rgba(58, 58, 158, 0.8);
+    --color-background-page-2: rgba(136, 136, 206, 0.7);
 }
 
 /************************************************
@@ -26,6 +27,25 @@ html {
 
 body {
     min-height: 100%;
+}
 
-    background-color: var(--color-background-page);
+/*********************************
+*           Background           *
+*********************************/
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    background-image: linear-gradient(115deg, var(--color-background-page-1), var(--color-background-page-2)),
+        url(../images/background.jpg);
+
+    background-position: center;
+    background-size: cover;
 }
