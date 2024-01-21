@@ -42,10 +42,9 @@ html {
 
 body {
     min-height: 100%;
-    max-width: 720px;
 
     margin: 0 auto;
-    padding: 3.125rem 0;
+    padding-top: 3.125rem;
 
     font-family: "Poppins", sans-serif;
     line-height: 1.4;
@@ -54,6 +53,19 @@ body {
     word-break: break-word;
 
     color: var(--color-text-main);
+}
+
+@media all and (min-width: 576px) {
+    body {
+        max-width: 540px;
+        padding-bottom: 3.125rem;
+    }
+}
+
+@media all and (min-width: 768px) {
+    body {
+        max-width: 720px;
+    }
 }
 
 /******************************
