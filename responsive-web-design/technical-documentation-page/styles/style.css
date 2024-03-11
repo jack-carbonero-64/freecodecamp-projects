@@ -4,10 +4,13 @@
 
 :root {
     /* Font sizes */
+    --fs-smaller: 0.75rem;
+    --fs-small: 0.95rem;
     --fs-large: 1.8rem;
 
     /* Colors */
     --color-background-page: white;
+    --color-background-code: rgb(247, 247, 247);
 
     --color-text-main: rgb(77, 78, 83);
     --color-text-title: black;
@@ -90,4 +93,52 @@ header {
 .nav-link {
     color: var(--color-text-main);
     text-decoration: none;
+}
+
+/***********************************
+*           Main content           *
+***********************************/
+
+main {
+    font-size: var(--fs-small);
+
+    margin-left: 300px;
+    padding: 30px 40px;
+}
+
+section:not(:first-child) {
+    margin-top: 2.5rem;
+}
+
+.section-list {
+    margin-left: 2rem;
+}
+
+.section-list .section-list {
+    margin-left: 1rem;
+}
+
+p,
+.section-list > li {
+    margin: 1rem 0;
+}
+
+code {
+    display: block;
+
+    font-size: var(--fs-smaller);
+    white-space: pre-line;
+
+    background-color: var(--color-background-code);
+    border-radius: 5px;
+
+    padding: 0.9rem;
+}
+
+code:not(.paragraph-code) {
+    margin: 1rem 15px 1rem 2rem;
+}
+
+.paragraph-code {
+    margin: 0.4rem 15px 0.4rem 2rem;
 }
