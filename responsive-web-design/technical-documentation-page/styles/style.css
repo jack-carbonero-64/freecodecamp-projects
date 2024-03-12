@@ -39,6 +39,7 @@ html {
     font-weight: var(--fw-base);
 
     line-height: 1.5;
+    overflow-wrap: break-word;
     color: var(--color-text-main);
 }
 
