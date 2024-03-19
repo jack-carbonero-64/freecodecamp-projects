@@ -1,3 +1,22 @@
+/********************************
+*           Variables           *
+********************************/
+
+:root {
+    /* Font sizes */
+    --fs-base: 16px;
+
+    --fs-medium: 1.125rem;
+
+    /* Font weights */
+    --fw-base: 400;
+
+    --fw-light: 200;
+
+    /* Colors */
+    --color-text-main: rgb(243, 243, 243);
+}
+
 /************************************************
 *           Page style initialization           *
 ************************************************/
@@ -13,6 +32,14 @@
 
 html {
     height: 100%;
+
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-base);
+
+    color: var(--color-text-main);
+
+    line-height: 1.4;
 }
 
 body {
@@ -38,4 +65,30 @@ body {
 
     background-position: center;
     background-size: cover;
+}
+
+/*****************************
+*           Header           *
+*****************************/
+
+header {
+    text-align: center;
+
+    padding: 0 0.625rem;
+
+    margin-top: 3.125rem;
+    margin-bottom: 1.875rem;
+}
+
+.form-title {
+    font-weight: var(--fw-base);
+
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.form-desc {
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-light);
+    font-style: italic;
 }
