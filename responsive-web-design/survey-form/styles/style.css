@@ -6,6 +6,7 @@
     /* Font sizes */
     --fs-base: 16px;
 
+    --fs-small: 0.9rem;
     --fs-medium: 1.125rem;
 
     /* Font weights */
@@ -15,6 +16,7 @@
 
     /* Colors */
     --color-text-main: rgb(243, 243, 243);
+    --color-text-clue: rgb(228, 228, 228);
 }
 
 /************************************************
@@ -93,4 +95,74 @@ header {
     font-size: var(--fs-medium);
     font-weight: var(--fw-light);
     font-style: italic;
+}
+
+/***********************************
+*           Main content           *
+***********************************/
+
+main {
+    background-color: rgba(27, 27, 50, 0.8);
+
+    padding: 2.5rem;
+}
+
+.form-group {
+    padding: 0.25rem;
+    margin-bottom: 1.25rem;
+}
+
+fieldset {
+    border: none;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+
+    font-size: var(--fs-medium);
+    margin-bottom: 0.5rem;
+}
+
+.clue {
+    font-size: var(--fs-small);
+    color: var(--color-text-clue);
+
+    margin-left: 0.25rem;
+}
+
+.input-checkable {
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+
+    margin-right: 0.625rem;
+}
+
+.input-textual {
+    font-family: inherit;
+    font-size: var(--fs-base);
+
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 0.25rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.button-submit {
+    font-size: var(--fs-base);
+
+    color: var(--color-text-main);
+    background-color: rgb(55, 175, 101);
+
+    width: 100%;
+    padding: 0.75rem;
+
+    cursor: pointer;
+    border: none;
 }
