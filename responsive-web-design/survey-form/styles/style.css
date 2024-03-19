@@ -44,6 +44,10 @@ html {
 
 body {
     min-height: 100%;
+    max-width: 720px;
+
+    margin: 0 auto;
+    padding: 3.125rem 0;
 }
 
 /*********************************
@@ -75,8 +79,6 @@ header {
     text-align: center;
 
     padding: 0 0.625rem;
-
-    margin-top: 3.125rem;
     margin-bottom: 1.875rem;
 }
 
