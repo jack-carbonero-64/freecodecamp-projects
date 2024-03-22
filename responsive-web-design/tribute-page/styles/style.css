@@ -68,3 +68,23 @@ header {
 
     margin-bottom: 1rem;
 }
+
+/********************************************
+*           Main content - Figure           *
+********************************************/
+
+figure {
+    text-align: center;
+    background-color: white;
+
+    padding: 10px 10px 15px 10px;
+}
+
+.photo {
+    display: block;
+
+    height: auto;
+    max-width: 100%;
+
+    margin: 0 auto 15px auto;
+}
