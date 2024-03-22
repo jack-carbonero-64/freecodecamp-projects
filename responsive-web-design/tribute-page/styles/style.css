@@ -11,6 +11,9 @@
 
     /* Colors */
     --color-text-main: rgb(51, 51, 51);
+
+    --color-text-hyperlink: rgb(71, 124, 167);
+    --color-text-hyperlink-visited: rgb(116, 99, 143);
 }
 
 /************************************************
@@ -111,4 +114,40 @@ figure {
 
 .timeline-item {
     margin: 15px 0;
+}
+
+/*******************************************
+*           Main content - Quote           *
+*******************************************/
+
+.quote-block {
+    font-style: italic;
+
+    max-width: 550px;
+    margin: 50px auto;
+}
+
+.quote {
+    margin-bottom: 1rem;
+}
+
+/*****************************************************
+*           Main content - Wikipedia entry           *
+*****************************************************/
+
+.wiki-entry {
+    font-weight: bold;
+    font-size: var(--fs-medium);
+
+    text-align: center;
+
+    margin: 1rem 0;
+}
+
+.hyperlink {
+    color: var(--color-text-hyperlink);
+}
+
+.hyperlink:visited {
+    color: var(--color-text-hyperlink-visited);
 }
