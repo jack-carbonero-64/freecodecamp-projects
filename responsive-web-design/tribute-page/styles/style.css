@@ -9,6 +9,7 @@
     /* Colors */
     --color-background-page: white;
     --color-background-content: rgb(238, 238, 238);
+    --color-background-figure: white;
 
     --color-text-main: rgb(51, 51, 51);
 }
@@ -69,4 +70,24 @@ header {
     font-size: var(--fs-large);
 
     margin-bottom: 1rem;
+}
+
+/********************************************
+*           Main content - Figure           *
+********************************************/
+
+figure {
+    text-align: center;
+    background-color: var(--color-background-figure);
+
+    padding: 0.625rem 0.625rem 0.9375rem 0.625rem;
+}
+
+.photo {
+    display: block;
+
+    height: auto;
+    max-width: 100%;
+
+    margin: 0 auto 15px auto;
 }
