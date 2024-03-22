@@ -6,6 +6,7 @@
     /* Font sizes */
     --fs-base: 16px;
 
+    --fs-medium: 1.17rem;
     --fs-large: 2.5rem;
 
     /* Colors */
@@ -87,4 +88,27 @@ figure {
     max-width: 100%;
 
     margin: 0 auto 15px auto;
+}
+
+/**********************************************
+*           Main content - Timeline           *
+**********************************************/
+
+.timeline-title {
+    font-size: var(--fs-medium);
+    text-align: center;
+
+    margin: 50px 0;
+}
+
+.timeline-list {
+    max-width: 550px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding-left: 1rem;
+}
+
+.timeline-item {
+    margin: 15px 0;
 }
