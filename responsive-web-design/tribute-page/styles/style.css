@@ -7,12 +7,18 @@
     --fs-medium: 1.17rem;
     --fs-large: 2.5rem;
 
+    /* Font weights */
+    --fw-bold: 700;
+
     /* Colors */
     --color-background-page: white;
     --color-background-content: rgb(238, 238, 238);
     --color-background-figure: white;
 
     --color-text-main: rgb(51, 51, 51);
+
+    --color-text-hyperlink: rgb(71, 124, 167);
+    --color-text-hyperlink-visited: rgb(116, 99, 143);
 }
 
 /************************************************
@@ -114,4 +120,40 @@ figure {
 
 .timeline-item {
     margin: 0.9375rem 0;
+}
+
+/*******************************************
+*           Main content - Quote           *
+*******************************************/
+
+.quote-block {
+    font-style: italic;
+
+    max-width: 550px;
+    margin: 2.5rem auto;
+}
+
+.quote {
+    margin-bottom: 1rem;
+}
+
+/*****************************************************
+*           Main content - Wikipedia entry           *
+*****************************************************/
+
+.wiki-entry {
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-bold);
+
+    text-align: center;
+
+    margin: 1rem 0;
+}
+
+.hyperlink {
+    color: var(--color-text-hyperlink);
+}
+
+.hyperlink:visited {
+    color: var(--color-text-hyperlink-visited);
 }
