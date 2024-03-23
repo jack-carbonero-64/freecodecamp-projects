@@ -4,8 +4,10 @@
 
 :root {
     /* Font sizes */
+    --fs-small: 0.9rem;
     --fs-medium: 1.17rem;
-    --fs-large: 2.5rem;
+    --fs-large: 2.2rem;
+    --fs-larger: 2.5rem;
 
     /* Font weights */
     --fw-bold: 700;
@@ -49,7 +51,18 @@ body {
     background-color: var(--color-background-page);
 
     min-height: 100%;
-    padding: 30px 10px;
+}
+
+@media all and (max-width: 460px) {
+    body {
+        display: flex;
+    }
+}
+
+@media all and (min-width: 461px) {
+    body {
+        padding: 30px 10px;
+    }
 }
 
 /*************************************
@@ -74,9 +87,16 @@ header {
 }
 
 .page-title {
-    font-size: var(--fs-large);
+    font-size: var(--fs-larger);
 
     margin-bottom: 1rem;
+}
+
+@media all and (max-width: 460px) {
+    .page-title {
+        font-size: var(--fs-large);
+        line-height: 1.2;
+    }
 }
 
 /********************************************
@@ -97,6 +117,12 @@ figure {
     max-width: 100%;
 
     margin: 0 auto 15px auto;
+}
+
+@media all and (max-width: 460px) {
+    .photo-caption {
+        font-size: var(--fs-small);
+    }
 }
 
 /**********************************************
