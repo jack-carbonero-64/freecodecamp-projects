@@ -18,6 +18,7 @@
     --color-separator-nav-item: rgb(77, 78, 83);
 
     --color-border-header: rgba(0, 22, 22, 0.4);
+    --color-border-nav: black;
 }
 
 /************************************************
@@ -65,17 +66,6 @@ body {
 *           Header           *
 *****************************/
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 300px;
-    height: 100%;
-
-    border-right: 3px solid var(--color-border-header);
-}
-
 .page-title {
     text-align: center;
     padding: 17px;
@@ -95,15 +85,43 @@ header {
     text-decoration: none;
 }
 
+@media all and (max-width: 815px) {
+    nav {
+        border: 2px solid var(--color-border-nav);
+    }
+
+    .nav-list {
+        height: 207px;
+        overflow-y: scroll;
+    }
+
+    .nav-item:first-child {
+        border-top: none;
+    }
+}
+
+@media all and (min-width: 816px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 300px;
+        height: 100%;
+
+        overflow-y: auto;
+
+        border-right: 3px solid var(--color-border-header);
+    }
+}
+
 /***********************************
 *           Main content           *
 ***********************************/
 
 main {
     font-size: var(--fs-small);
-
-    margin-left: 300px;
-    padding: 30px 40px;
+    padding: 30px 20px;
 }
 
 section:not(:first-child) {
@@ -136,9 +154,29 @@ code {
 }
 
 code:not(.paragraph-code) {
-    margin: 1rem 15px 1rem 2rem;
+    margin: 1rem 0 1rem 0;
 }
 
 .paragraph-code {
-    margin: 0.4rem 15px 0.4rem 2rem;
+    margin: 0.4rem 0 0.4rem 0;
+}
+
+@media all and (min-width: 401px) {
+    main {
+        padding: 30px 40px;
+    }
+
+    code:not(.paragraph-code) {
+        margin: 1rem 15px 1rem 2rem;
+    }
+
+    .paragraph-code {
+        margin: 0.4rem 15px 0.4rem 2rem;
+    }
+}
+
+@media all and (min-width: 816px) {
+    main {
+        margin-left: 300px;
+    }
 }
