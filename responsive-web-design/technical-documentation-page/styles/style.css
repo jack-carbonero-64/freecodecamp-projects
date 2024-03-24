@@ -1,3 +1,21 @@
+/********************************
+*           Variables           *
+********************************/
+
+:root {
+    /* Font sizes */
+    --fs-base: 16px;
+
+    --fs-large: 1.8rem;
+
+    /* Font weights */
+    --fw-base: 400;
+
+    /* Colors */
+    --color-text-main: rgb(77, 78, 83);
+    --color-text-title: black;
+}
+
 /************************************************
 *           Page style initialization           *
 ************************************************/
@@ -13,10 +31,62 @@
 
 html {
     height: 100%;
+
+    font-family: Arial, sans-serif;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-base);
+
+    line-height: 1.5;
+    color: var(--color-text-main);
 }
 
 body {
     min-height: 100%;
 
     background-color: white;
+}
+
+/******************************
+*           General           *
+******************************/
+
+.title {
+    font-size: var(--fs-large);
+    font-weight: var(--fw-base);
+
+    color: var(--color-text-title);
+}
+
+/*****************************
+*           Header           *
+*****************************/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 300px;
+    height: 100%;
+
+    border-right: 3px solid rgba(0, 22, 22, 0.4);
+}
+
+.page-title {
+    text-align: center;
+    padding: 17px;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-item {
+    padding: 10px 30px;
+    border-top: 1px solid rgb(77, 78, 83);
+}
+
+.nav-link {
+    color: var(--color-text-main);
+    text-decoration: none;
 }
