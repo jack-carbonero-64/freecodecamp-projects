@@ -11,6 +11,8 @@
     --color-button-base: rgb(241, 196, 15);
     --color-button-hover: orange;
 
+    --color-icon: darkorange;
+
     /* Font weights */
     --fw-bolder: 900;
 }
@@ -166,4 +168,35 @@ h1 {
     font-weight: var(--fw-bolder);
 
     padding: 0.3125rem 1.25rem;
+}
+
+/***************************************
+*           Features section           *
+***************************************/
+
+.section-features {
+    display: grid;
+    grid-template-columns: 20fr 80fr;
+    gap: 3.5rem 0.5rem;
+
+    max-width: 62.5rem;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-icon);
+}
+
+.feature-desc {
+    display: flex;
+
+    flex-direction: column;
+    gap: 1rem 0;
 }
