@@ -200,3 +200,19 @@ h1 {
     flex-direction: column;
     gap: 1rem 0;
 }
+
+/************************************
+*           Video section           *
+************************************/
+
+.section-video > iframe {
+    display: block;
+
+    margin: 0 auto;
+    border: none;
+
+    aspect-ratio: 16/9;
+
+    max-width: 35rem;
+    width: 100%;
+}
