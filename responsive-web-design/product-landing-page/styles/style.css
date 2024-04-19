@@ -8,6 +8,7 @@
     --color-background-secondary: rgb(221, 221, 221);
 
     --color-text-main: black;
+    --color-text-copyright: rgb(68, 68, 68);
 
     --color-button-base: rgb(241, 196, 15);
     --color-button-hover: orange;
@@ -37,6 +38,9 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+
     min-height: 100%;
 
     font-family: "Lato", sans-serif;
@@ -127,6 +131,7 @@ main {
     max-width: 1000px;
 
     margin: 0 auto;
+    flex: 1 0 auto;
 }
 
 section {
@@ -265,4 +270,26 @@ h1 {
     margin: 1rem 0;
 
     font-weight: var(--fw-bold);
+}
+
+/*****************************
+*           Footer           *
+*****************************/
+
+footer {
+    background-color: var(--color-background-secondary);
+
+    padding: 1.25rem 0;
+    flex-shrink: 0;
+}
+
+.footer-links {
+    justify-content: center;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: var(--color-text-copyright);
+
+    margin-top: 0.625rem;
 }
