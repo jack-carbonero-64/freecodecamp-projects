@@ -123,6 +123,22 @@ header {
     justify-content: space-around;
 }
 
+@media all and (max-width: 750px) {
+    .nav-list {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 530px) {
+    header {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        width: 100%;
+    }
+}
+
 /***********************************
 *           Main content           *
 ***********************************/
@@ -206,6 +222,18 @@ h1 {
 
     flex-direction: column;
     gap: 1rem 0;
+}
+
+@media all and (max-width: 500px) {
+    .section-features {
+        grid-template-columns: 100%;
+
+        text-align: center;
+    }
+
+    .feature-icon {
+        display: none;
+    }
 }
 
 /************************************
