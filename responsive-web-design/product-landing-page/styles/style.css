@@ -7,6 +7,12 @@
     --color-background-page: rgb(238, 238, 238);
 
     --color-text-main: black;
+
+    --color-button-base: rgb(241, 196, 15);
+    --color-button-hover: orange;
+
+    /* Font weights */
+    --fw-bolder: 900;
 }
 
 /************************************************
@@ -58,6 +64,26 @@ a {
     text-decoration: none;
 }
 
+input {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+
+    cursor: pointer;
+
+    border: none;
+    background-color: var(--color-button-base);
+}
+
+button:hover {
+    background-color: var(--color-button-hover);
+    transition: background-color 1s;
+}
+
 /*****************************
 *           Header           *
 *****************************/
@@ -87,4 +113,57 @@ header {
 .nav-list {
     margin: 0.5rem 0;
     justify-content: space-around;
+}
+
+/***********************************
+*           Main content           *
+***********************************/
+
+main {
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/******************************************
+*           Get started section           *
+******************************************/
+
+.section-get-started {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.625rem 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: inherit;
+
+    width: 100%;
+}
+
+.form-get-started > input {
+    max-width: 17.1875rem;
+    width: 100%;
+
+    padding: 0.3125rem;
+}
+
+.button-get-started {
+    font-weight: var(--fw-bolder);
+
+    padding: 0.3125rem 1.25rem;
 }
