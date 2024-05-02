@@ -3,8 +3,18 @@
 ********************************/
 
 :root {
+    /* Font sizes */
+    --fs-large: 1.8rem;
+
     /* Colors */
     --color-background-page: white;
+
+    --color-text-main: rgb(77, 78, 83);
+    --color-text-title: black;
+
+    --color-separator-nav-item: rgb(77, 78, 83);
+
+    --color-border-header: rgba(0, 22, 22, 0.4);
 }
 
 /************************************************
@@ -27,5 +37,57 @@ html {
 body {
     min-height: 100%;
 
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+    color: var(--color-text-main);
     background-color: var(--color-background-page);
+}
+
+/******************************
+*           General           *
+******************************/
+
+.title {
+    font-size: var(--fs-large);
+    font-weight: inherit;
+
+    color: var(--color-text-title);
+}
+
+/*****************************
+*           Header           *
+*****************************/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 300px;
+    height: 100%;
+
+    border-right: 3px solid var(--color-border-header);
+}
+
+.page-title {
+    text-align: center;
+    padding: 17px;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-item {
+    padding: 10px 30px;
+    border-top: 1px solid var(--color-separator-nav-item);
+}
+
+.nav-link {
+    color: var(--color-text-main);
+    text-decoration: none;
 }
