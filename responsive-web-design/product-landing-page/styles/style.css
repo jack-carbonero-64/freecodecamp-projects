@@ -4,7 +4,9 @@
 
 :root {
     /* Colors */
-    --color-background-page: white;
+    --color-background-page: rgb(238, 238, 238);
+
+    --color-text-main: black;
 }
 
 /************************************************
@@ -27,5 +29,62 @@ html {
 body {
     min-height: 100%;
 
+    font-family: "Lato", sans-serif;
+
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+    color: var(--color-text-main);
     background-color: var(--color-background-page);
+}
+
+/******************************
+*           General           *
+******************************/
+
+.list-links {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 0.3125rem 1.25rem;
+
+    text-align: center;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*****************************
+*           Header           *
+*****************************/
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    padding: 0 1.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 0 2rem;
+
+    background-color: var(--color-background-page);
+}
+
+.logo {
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-list {
+    margin: 0.5rem 0;
+    justify-content: space-around;
 }
