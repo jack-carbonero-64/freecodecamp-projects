@@ -8,6 +8,7 @@
     --fs-regular-p: 1.375rem;
 
     --fs-large-m: 1.875rem;
+    --fs-large: 2.625rem;
     --fs-large-p: 3.75rem;
 
     /* Font weights */
@@ -21,8 +22,10 @@
 
     --color-theme-main: rgb(190, 49, 68);
     --color-theme-secondary: rgb(69, 86, 125);
+    --color-theme-tertiary: rgb(48, 56, 65);
 
     --color-text-main: rgb(240, 240, 240);
+    --color-text-tag-delimiter: rgb(255, 127, 80);
 }
 
 /************************************************
@@ -137,4 +140,83 @@ header {
     font-weight: var(--fw-thin);
 
     color: var(--color-theme-main);
+}
+
+/***************************************
+*           Projects section           *
+***************************************/
+
+.section-projects {
+    background-color: var(--color-theme-secondary);
+    text-align: center;
+
+    padding: 5rem 0;
+}
+
+.section-projects-title {
+    font-size: var(--fs-large);
+    line-height: 1.5;
+
+    margin-bottom: 4rem;
+
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.project-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+}
+
+.project-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+    gap: 0.5rem 1rem;
+
+    background-color: var(--color-theme-tertiary);
+    padding: 1rem 2rem;
+}
+
+.project-name-tag-delimiter {
+    color: var(--color-theme-tertiary);
+    transition: color 0.3s ease-out;
+}
+
+.project-link:hover .project-name-tag-delimiter {
+    color: var(--color-text-tag-delimiter);
+}
+
+.link-show-all {
+    display: inline-block;
+
+    padding: 1rem 1.5rem;
+    margin-top: 4rem;
+
+    background-color: var(--color-theme-tertiary);
+    transition: background-color 0.3s ease-out;
+}
+
+.link-show-all:hover {
+    background-color: var(--color-theme-main);
 }
