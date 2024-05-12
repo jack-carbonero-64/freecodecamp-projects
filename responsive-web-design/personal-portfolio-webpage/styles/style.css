@@ -4,8 +4,10 @@
 
 :root {
     /* Font sizes */
+    --fs-regular-m: 1.125rem;
     --fs-regular: 1.25rem;
     --fs-regular-p: 1.375rem;
+    --fs-regular-p2: 1.5rem;
 
     --fs-large-m: 1.875rem;
     --fs-large: 2.625rem;
@@ -219,4 +221,52 @@ header {
 
 .link-show-all:hover {
     background-color: var(--color-theme-main);
+}
+
+/**************************************
+*           Contact section           *
+**************************************/
+
+.section-contact {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+    min-height: 90vh;
+
+    background: linear-gradient(to top, var(--color-theme-tertiary) 90%, var(--color-theme-secondary) 100%);
+    text-align: center;
+}
+
+.section-contact-title {
+    font-size: var(--fs-large-p);
+}
+
+.section-contact-subtitle {
+    font-size: var(--fs-regular-m);
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 1rem 2rem;
+    margin-top: 2.5rem;
+
+    font-size: var(--fs-regular-p2);
+}
+
+.link-contact {
+    padding: 0.25rem 0.75rem;
+    transition: transform 0.3s ease-out;
+}
+
+.link-contact:hover {
+    transform: translateY(0.5rem);
 }
