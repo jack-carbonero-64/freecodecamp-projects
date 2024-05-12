@@ -15,6 +15,7 @@
 
     /* Font weights */
     --fw-thin: 200;
+    --fw-light: 300;
 
     /* Colors */
     --color-background-page: white;
@@ -269,4 +270,24 @@ header {
 
 .link-contact:hover {
     transform: translateY(0.5rem);
+}
+
+/*****************************
+*           Footer           *
+*****************************/
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    gap: 1rem 2rem;
+    padding: 2rem 0;
+
+    font-size: var(--fs-regular-m);
+    font-weight: var(--fw-light);
+    text-align: center;
+
+    background-color: var(--color-theme-tertiary);
+    border-top: 4px solid var(--color-theme-main);
 }
