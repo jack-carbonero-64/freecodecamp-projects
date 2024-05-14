@@ -224,6 +224,12 @@ header {
     background-color: var(--color-theme-main);
 }
 
+@media all and (max-width: 319px) {
+    .grid-projects {
+        grid-template-columns: 1fr;
+    }
+}
+
 /**************************************
 *           Contact section           *
 **************************************/
