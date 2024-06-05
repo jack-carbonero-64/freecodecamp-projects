@@ -12,5 +12,31 @@
         <script src="./scripts/script.js"></script>
     </head>
 
-    <body></body>
+    <body>
+        <main>
+            <img class="logo" src="./images/logo.svg" alt="Logo" />
+
+            <h1 class="page-title">Is it a Palindrome?</h1>
+
+            <div class="palindrome-box box">
+                <label for="palindrome-input" class="palindrome-label">Enter in text to check for a palindrome:</label>
+
+                <div class="palindrome-check">
+                    <input name="palindrome-text" id="palindrome-input" class="palindrome-input" type="text" />
+                    <button class="check-button" type="button">Check</button>
+                </div>
+
+                <p class="palindrome-result not-displayed"></p>
+            </div>
+
+            <div class="definition-box box">
+                <span>💡</span>
+
+                <p>
+                    A <dfn>palindrome</dfn> is a word or sentence that's spelled the same way both forward and backward,
+                    ignoring punctuation, case, and spacing.
+                </p>
+            </div>
+        </main>
+    </body>
 </html>
